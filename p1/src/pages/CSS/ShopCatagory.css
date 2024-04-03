@@ -1,0 +1,130 @@
+.bannner
+{
+    display:block;
+    margin:30px auto;
+    width:82%;
+}
+.shopcategory-indexSort
+{
+    display:flex;
+    margin:0px 170px;
+    justifty-content:space-between;
+    align-items:center;
+}
+.shop-category-sort
+{
+    padding:10px 20px;
+    border-radius:40px;
+    margin-left: auto;
+    border:1px solid #888;
+}
+.shopcategory-indexSort p span
+{
+    font-weight:600;
+}
+.shopcategory-products
+{
+    /* margin:20px 170px; */
+    margin-left:40px;
+    margin-top:30px;
+    margin-bottom:30px;
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr 1fr;
+    row-gap:80px;
+    gap:20px;
+}
+.shop-category-loadmore
+{
+    padding-left:105px;
+    display:flex;
+    justifty-content:center;
+    align-items:center;
+    margin:150px auto;
+    width:233px;
+    height:69px;
+    border-radius:75px;
+    background:#ededed;
+    color:#787878;
+    font-size:18px;
+    font-weight:500;
+    /* border:1px solid red; */
+}
+@media (max-width:1280px)
+{
+    .bannner
+    {
+        margin:20px auto;
+        width:90%;
+    }
+    .shopcategory-indexSort
+    {
+        width:90%;
+        margin:auto;
+    }
+    .shop-category-sort
+    {
+        /* margin-right:-50px; */
+        padding:5px 10px;
+        font-size:12px;
+    }
+    .shopcategory-indexSort p
+    {
+        font-size:12px;
+    }
+    .shopcategory-products
+    {
+        width:90%;
+        margin:10px auto;
+        row-gap:40px;
+    }
+    .shopcategory-products .item{
+        margin:auto;
+    }
+    .shop-category-loadmore
+    {
+        margin:100px auto;
+        width:200px;
+        height:60px;
+        font-size:16px;
+    }
+}
+@media (max-width:800px)
+{
+    .bannner
+    {
+        /* margin:20px auto; */
+        width:95%;
+    }
+   
+    .shopcategory-products
+    {
+        width:95%;
+        /* margin:10px auto; */
+        row-gap:40px;
+        /* column-gap:-1170px; */
+    }
+    
+    .shop-category-loadmore
+    {
+        margin:60px auto;
+        width:150px;
+        height:40px;
+        font-size:13px;
+        padding-left:70px;
+    }
+}
+@media (max-width:600px)
+{
+    .shopcategory-products
+    {
+        grid-template-columns:1fr 1fr 1fr;
+    }
+}
+@media (max-width:550px)
+{
+    .shopcategory-products
+    {
+        grid-template-columns:2fr 2fr ;
+        /* gap:0px; */
+    }
+}

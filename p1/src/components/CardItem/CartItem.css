@@ -1,0 +1,199 @@
+.CartItem
+{
+    margin:100px 170px;
+}
+.CartItem hr
+{
+    height:3px;
+    background:#e2e2e2;
+    border:0;
+    /* width:700px; */
+}
+.formet-main
+{
+    display:grid;
+    grid-template-columns:0.5fr 2fr 1fr 1fr 1fr 1fr;
+    align-items:center;
+    gap:75px;
+    padding:20px 0px;
+    color:#454545;
+    font-size:18px;
+    font-weight:600;
+}
+.formet
+{
+    font-size:17px;
+    font-weight:500;
+}
+.icon
+{
+    /* width:60px; */
+    height:62px;
+}
+.remove
+{
+    width:15px;
+    margin:0px 40px;
+    cursor:pointer;
+}
+.quantity
+{
+    width:64px;
+    height:50px;
+    border:2px solid #ebebeb;
+    background:white;
+}
+.down
+{
+    display:flex;
+    margin:108px 0px;
+}
+.total
+{
+    flex:1;
+    display:flex;
+    flex-direction:column;
+    margin-right:200px;
+    gap:40px;
+}
+.total-items
+{
+    display:flex;
+    justify-content:space-between;
+    padding:15px 0px;
+}
+.total button
+{
+    width:262px;
+    height:58px;
+    outline:none;
+    border:none;
+    background:#ff5a5a;
+    color:white;
+    font-size:16px;
+    font-weight:600;
+    cursor:pointer;
+}
+.promocode
+{
+    flex:1;
+    font-size:16px;
+    font-weight:500;
+}
+.promocode p
+{
+    color:#555;
+}
+.box
+{
+    width:504px;
+    margin-top:15px;
+    padding-left:20px;
+    height:58px;
+    background:#eaeaea;
+}
+.box input
+{
+    border:none;
+    outline:none;
+    background:transparent;
+    font-size:16px;
+    width:330px;
+    geight:50px;
+    margin-top:15px;
+}
+.box button
+{
+    width:170px;
+    height:58px;
+    font-size:16px;
+    background:black;
+    color:white;
+    cursor:pointer;
+}
+@media (max-width:1280px)
+{
+    .CartItem
+    {
+        margin:60px 50px;
+    }
+    .formet-main
+    {
+        grid-template-columns:0.5fr 3fr 0.5fr 0.5fr 0.5fr 0.5fr;
+        gap:20px;
+        padding:15px 0px;
+        font-size:15px;
+    }
+    .icon
+    {
+        height:50px;
+    }
+    .remove
+    {
+        margin:auto;
+    }
+    .quantity
+    {
+        width:40px;
+        height:30px;
+    }
+    .down
+    {
+        margin:80px 0px;
+        flex-direction:column;
+        gap:80px;
+    }
+    .total
+    {
+        margin:0;
+    }
+    .total button
+    {
+        max-width:200px;
+        height:45px;
+        font-size:13px;
+    }
+    .promocode
+    {
+        width:auto;
+        max-width:500px;
+    }
+    .box input
+    {
+        width:100%;
+    }
+    .box button
+    {
+        width:120px;
+        margin-left:-125px;
+    }
+}
+@media (max-width:600px)
+{
+    
+    .formet-main
+    {
+       display:none;
+       grid-template-columns:0.5fr 3fr 0.5fr;
+       gap:10px;
+    }
+    .formet
+    {
+        display:grid;
+    }
+    .box
+    {
+        width:400px;
+    }
+    
+}
+@media (max-width:500px)
+{
+    
+   
+    .box
+    {
+        width:300px;
+    }
+    
+}
